@@ -10,7 +10,14 @@
 
 <body>
   <div id="app">
-  <h1>  {{ message }}</h1>
+    <h1>{{ message }}</h1>
+    <h1>{{ message }}</h1>
+  </div>
+  <div id="app-2">
+    <span v-bind:title="message">
+    Hover your mouse over me for a few seconds
+    to see my dynamically bound title!
+  </span>
   </div>
 
   <!--<script src="node_modules/vue/dist/vue.js"></script>-->

@@ -11,13 +11,25 @@
 <body>
   <div id="app">
     <h1>{{ message }}</h1>
-    <h1>{{ message }}</h1>
   </div>
+
   <div id="app-2">
     <span v-bind:title="message">
     Hover your mouse over me for a few seconds
     to see my dynamically bound title!
   </span>
+  </div>
+
+  <div id="app-3">
+    <p v-if="seen">Now you see me</p>
+  </div>
+
+  <div id="app-4">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
   </div>
 
   <!--<script src="node_modules/vue/dist/vue.js"></script>-->
